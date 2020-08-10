@@ -4,7 +4,7 @@ This proposal has the high-level implementation design of a new Numba extension 
 additional decorators to the Numba front-end and a back-end code-generator to automatically offload data-parallel kernels to SYCL devices.
 Aspects of the front-end extensions are discussed separately (refer [language design proposal](https://github.com/IntelPython/Numba_Extension_Proposals/blob/master/Language_Design_Proposal.md)).
 
-`Numba-dppl` was designed as a standalone Numba extension to minimizes, as much as possible, changes to the core codebase of Numba. In Section 2, we demonstrate at a
+`Numba-dppl` was designed as a standalone Numba extension to minimizes, as much as possible, changes to the core code base of Numba. In Section 2, we demonstrate at a
 high-level how our implementation works. We would like to note that in Numba's current design not all of our changes can be outlined into a separate module. 
 For all such places, we want to discuss additional extension points for Numba. Section 3 has a list of currently identified cases where we cannot easily 
 separate out our changes into an extension module.
