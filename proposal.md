@@ -261,7 +261,7 @@ detail that we omit in this language design proposal.
 ## Section 3.1 Data Movement Optimization Across @jit functions
 
 We now discuss various use cases where data can be kept device accessible across
-multiple @jit decorated functions. The use cases demonstrate the usage of a
+multiple @jit decorated functions. The use cases demonstrate the usage of
 a SYCL USM shared allocator backed array container that we call "DPArray". Let us
 assume that DPArray sub-classes NumPy's ndarray and supports all ndarray
 operations automatically, with the execution happening on the CPU. Our new
