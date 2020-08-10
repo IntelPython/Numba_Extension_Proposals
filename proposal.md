@@ -152,8 +152,8 @@ automatic offloading that inherently generates data-parallel code.
 
 To handle this type of scenarios, we propose the following:
 
-1. The new backend throws an error as "paralle=False" conflicts with
-   autoatic offloading.
+1. The new backend throws an error as "parallel=False" conflicts with
+   automatic offloading.
 2. The new backend ignores all @jit flags that do not apply to it. In
    Listing 2.3, that will imply that Numba ignores the original
    "parallel=False" argument and proceeds with attempting to offload
